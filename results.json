@@ -1,0 +1,45 @@
+{
+  "ratings": 100000,
+  "users": 16554,
+  "items": 10506,
+  "svd_validation_ndcg": {
+    "10": 0.0399,
+    "20": 0.0346,
+    "50": 0.0291
+  },
+  "chosen_svd_factors": 10,
+  "recent_popularity_validation_ndcg": {
+    "7": 0.1814,
+    "14": 0.1755,
+    "30": 0.1295,
+    "60": 0.0984
+  },
+  "chosen_recent_window_days": 7,
+  "test": {
+    "popularity": {
+      "n_users": 1956,
+      "precision@10": 0.0231,
+      "recall@10": 0.1156,
+      "ndcg@10": 0.0587
+    },
+    "recent_popularity_7d": {
+      "n_users": 1956,
+      "precision@10": 0.036,
+      "recall@10": 0.2061,
+      "ndcg@10": 0.1209
+    },
+    "item_based_cf": {
+      "n_users": 1956,
+      "precision@10": 0.0213,
+      "recall@10": 0.1081,
+      "ndcg@10": 0.0601
+    },
+    "svd_10_factors": {
+      "n_users": 1956,
+      "precision@10": 0.0164,
+      "recall@10": 0.0803,
+      "ndcg@10": 0.046
+    }
+  },
+  "best_model_on_test": "recent_popularity_7d"
+}
